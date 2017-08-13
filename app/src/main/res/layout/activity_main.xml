@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/BtnInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="Insertar" />
+
+    <Button
+        android:id="@+id/BtnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/BtnInsertar"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/BtnMover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/BtnEliminar"
+        android:text="Mover" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/BtnInsertar" />
+
+</RelativeLayout>
